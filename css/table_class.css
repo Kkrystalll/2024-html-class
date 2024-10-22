@@ -1,0 +1,15 @@
+table {
+  margin-left: 40px;
+  border-collapse: separate;
+  border-spacing: 10px;
+  display: inline-block;
+}
+
+table,
+td,
+th {
+  border-top: 4px solid #4686df;
+  border-bottom: 4px solid #46df50;
+  border-left: 4px solid #dfd246;
+  border-right: 4px solid #df6c46;
+}

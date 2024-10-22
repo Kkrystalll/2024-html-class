@@ -1,0 +1,118 @@
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: #ffa;
+  /* transition-property: all;
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out; */
+  /* transition: all 3s ease-in-out; */
+  /* transition-delay: -1s; */
+  /* transition-property: width, border-radius, background-color;
+  transition-duration: 2s, 3s, 0s;
+  transition-delay: 0s, 2s, 5s; */
+  transition: width 2s 0s, border-radius 3s 2s, background-color 0s 5s;
+}
+
+.box1 {
+  transition-timing-function: ease;
+}
+
+.box:hover {
+  background-color: #fa0;
+  width: 400px;
+  border-radius: 50%;
+  /* transition-property: all;
+  transition-duration: 2s; */
+  /* transition-property: border-radius, width;
+  transition-duration: 3s, 2s;
+  transition-delay: 1s, 4s; */
+  transition: border-radius 3s 1s, width 2s 4s;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  background-color: #be83e6;
+}
+
+.card h1 {
+  margin: 20px 0;
+}
+
+.card-img {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.card-img img {
+  width: 100%;
+  object-fit: cover;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.card-img img:hover {
+  /* transform: scale(1.5); */
+}
+
+.card-img img:last-child {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: left 1s ease;
+}
+
+.card-img img:last-of-type {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: left 1s ease;
+}
+
+/* .card-img:hover img:first-child {
+  transform: translateX(-100%);
+}
+
+.card-img:hover img:last-child {
+  left: 0;
+} */
+
+.card-img:hover img:last-of-type {
+  left: 0;
+}
+
+.card .card-img {
+  width: 100%;
+  height: 200px;
+  background-image: url(../images/bear.png);
+  background-size: 100%;
+  background-position: center;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.card-img:hover {
+  background-size: 120%;
+}
+
+.hint {
+  position: absolute;
+  bottom: -36px;
+  left: 0;
+  right: 0;
+  background-color: #fa0;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.card-img:hover .hint {
+  bottom: 0;
+  transition: bottom 1s ease 0.5s;
+}

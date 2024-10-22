@@ -1,0 +1,46 @@
+h1 {
+  margin: 50px;
+}
+
+.list {
+  line-height: 2rem;
+  color: green;
+}
+
+.detail-list {
+  line-height: 2rem;
+  color: red;
+  font-weight: 700;
+}
+
+.active {
+  color: blue;
+}
+
+.title {
+  color: #0a0a60;
+  font-size: 28px;
+}
+
+.border-b {
+  border-bottom: 1px solid #fa0;
+  margin: 0 100px 40px;
+  padding-bottom: 40px;
+  /* padding: 0 100px 40px; */
+}
+
+.card {
+  width: 210px;
+  height: 210px;
+}
+
+.card-img2 {
+  width: 100%;
+  height: 80%;
+}
+
+.card-img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}

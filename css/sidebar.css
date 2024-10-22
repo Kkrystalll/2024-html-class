@@ -1,0 +1,65 @@
+:root {
+  --nav-height: 100px;
+}
+
+body {
+  background-color: #ffa;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sidebar {
+  background-color: #c181ae;
+  width: 20vw;
+  height: calc(100vh - var(--nav-height));
+  top: var(--nav-height);
+  position: relative;
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+
+.sidebar img {
+  width: 100%;
+}
+
+.item a {
+  display: block;
+  padding: 20px;
+  background-color: #a15089;
+  color: white;
+}
+
+.item a:hover {
+  background-color: #fff;
+  color: #40002d;
+}
+
+.toggle {
+  position: absolute;
+  background-color: #fa0;
+  width: 40px;
+  height: 80px;
+  font-size: 24px;
+  line-height: 80px;
+  text-align: center;
+  right: -40px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+.sidebar-switch {
+  display: none;
+}
+
+.sidebar-switch:checked + .sidebar {
+  transform: translateX(0);
+}
+
+.sidebar-switch:checked + .sidebar .toggle .fa-chevron-right {
+  transform: scaleX(-1);
+}

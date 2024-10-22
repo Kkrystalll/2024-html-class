@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/transition.css" />
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="bg-img"></div>
+
+    <section>
+      <input type="radio" name="carousel" id="cat" class="cat" checked />
+      <input type="radio" name="carousel" id="fat-tiger" class="fat-tiger" />
+      <input type="radio" name="carousel" id="bear" class="bear" />
+      <input type="radio" name="carousel" id="gon" class="gon" />
+      <input type="radio" name="carousel" id="purin" class="purin" />
+
+      <div class="carousel" id="carousel">
+        <div class="img-item cat">
+          <img src="/images/cat.png" alt="" />
+        </div>
+        <div class="img-item fat-tiger">
+          <img src="/images/fat-tiger.jpeg" alt="" />
+        </div>
+        <div class="img-item bear">
+          <img src="/images/bear.png" alt="" />
+        </div>
+        <div class="img-item gon">
+          <img src="/images/gon.webp" alt="" />
+        </div>
+        <div class="img-item purin">
+          <img src="/images/purin.jpeg" alt="" />
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <label class="carousel-btn" for="cat"></label>
+        <label class="carousel-btn" for="fat-tiger"></label>
+        <label class="carousel-btn" for="bear"></label>
+        <label class="carousel-btn" for="gon"></label>
+        <label class="carousel-btn" for="purin"></label>
+      </div>
+    </section>
+
+    <section class="container">
+      <input type="radio" id="cat1" name="group" checked />
+      <input type="radio" id="cat2" name="group" />
+      <input type="radio" id="cat3" name="group" />
+      <input type="radio" id="cat4" name="group" />
+      <div class="img-area">
+        <div class="img-list">
+          <img src="/images/cat.png" />
+          <img src="/images/bear.png" />
+          <img src="/images/fat-tiger.jpeg" />
+          <img src="/images/purin.jpeg" />
+        </div>
+      </div>
+      <div class="btn-list">
+        <label for="cat1"></label>
+        <label for="cat2"></label>
+        <label for="cat3"></label>
+        <label for="cat4"></label>
+      </div>
+    </section>
+  </body>
+</html>

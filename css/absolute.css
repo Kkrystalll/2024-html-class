@@ -1,0 +1,56 @@
+.out-wrap {
+  margin: 40px;
+  padding: 40px;
+  border: 4px solid red;
+  position: relative;
+}
+
+.inside-wrap {
+  padding: 40px;
+  border: 4px solid blue;
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  line-height: 100px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.bg {
+  height: 1200px;
+  background-color: #aaa;
+}
+
+.card {
+  width: 300px;
+  background-color: #ebdc93;
+  padding: 20px;
+  position: relative;
+  margin: 40px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+}
+
+.tag {
+  background-color: red;
+  color: white;
+  position: absolute;
+  padding: 10px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 0 4px 4px 0;
+}

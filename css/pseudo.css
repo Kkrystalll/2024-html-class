@@ -1,0 +1,126 @@
+section {
+  margin-top: 100px;
+  background-color: #eee;
+  /* display: flex; */
+  justify-content: center;
+}
+
+section > .item {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  background-color: #afa;
+}
+
+.text::before {
+  content: "我是before";
+  display: inline-block;
+  background-color: #faa;
+}
+
+.text::after {
+  content: "我是after";
+  display: inline-block;
+  background-color: #aaf;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+/* h1::before {
+  content: "◣";
+  position: absolute;
+  color: #fa0;
+  z-index: -1;
+} */
+
+h1::before {
+  content: "";
+  position: absolute;
+  border-top: 18px solid transparent;
+  border-left: 18px solid #fa0;
+  border-right: 18px solid transparent;
+  border-bottom: 18px solid #fa0;
+  z-index: -1;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #ffa;
+  position: relative;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  left: -100px;
+  width: 100px;
+  height: 100px;
+  background-color: #afa;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  right: -100px;
+  width: 100px;
+  height: 100px;
+  background-color: #faa;
+}
+
+/* h1::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-color: #faa;
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  z-index: -1;
+} */
+
+.line-section {
+  text-align: center;
+}
+
+.line-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid red;
+  position: relative;
+}
+
+.line-section span:hover::after {
+  content: "";
+  /* width: 120px; */
+  height: 4px;
+  background-color: rgb(36, 232, 65);
+  position: absolute;
+  top: -20px;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  right: 40px;
+  left: 40px;
+}
+
+.line-section span {
+  font-size: 36px;
+  font-weight: 700;
+  /* border-bottom: 1px solid red; */
+  display: inline-block;
+  position: relative;
+}
+
+.title-line {
+  width: 120px;
+  /* border: none; */
+  border: 2px solid red;
+  margin: 0 auto;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <style>
+      input {
+        margin: 10px 0;
+      }
+      div {
+        width: 50%;
+      }
+      input[type="text"], input[type="email"], input[type="date"] {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>旅遊調查表單</h1>
+    <form action="" style="margin: 20px">
+      <label>
+        姓名
+        <input type="text" />
+      </label>
+      <br />
+      <label>
+        電話
+        <input type="tel" name="" id="" />
+      </label>
+      <br />
+      <label>
+        信箱
+        <input type="email" name="" id="" />
+      </label>
+      <br />
+      <label>
+        生日
+        <input type="date" name="" />
+      </label>
+      <p>
+        是否攜伴
+        <label><input type="radio" name="double" />是</label>
+        <label><input type="radio" name="double" />否</label>
+      </p>
+      <label for="number">
+        總人數(含自己)
+        <input type="number" name="" id="number" />
+      </label>
+      <p>
+        <label>備註<textarea name=""></textarea></label>
+      </p>
+
+      <p>可以的日期</p>
+
+      <p>
+        <label><input type="checkbox" name="freeTime" />10/1 ~ 10/5</label>
+      </p>
+      <p>
+        <label><input type="checkbox" name="freeTime" />10/6 ~ 10/10</label>
+      </p>
+      <p>
+        <label><input type="checkbox" name="freeTime" />10/11 ~ 10/15</label>
+      </p>
+      <p>
+        <label><input type="checkbox" name="freeTime" />10/16 ~ 10/20</label>
+      </p>
+      <p>
+        <label><input type="checkbox" name="freeTime" />10/21 ~ 10/25</label>
+      </p>
+      <p>
+        <label><input type="checkbox" name="freeTime" />10/26 ~ 10/30</label>
+      </p>
+
+      <p style="margin: 40px 0">
+        <label for="destination">想去哪裡玩</label>
+        <select name="destination">
+          <optgroup label="台灣">
+            <option value="">台北</option>
+            <option value="">台中</option>
+            <option value="">高雄</option>
+          </optgroup>
+          <optgroup label="日本">
+            <option value="">大阪</option>
+            <option value="">東京</option>
+            <option value="">沖繩</option>
+            <option value="">北海道</option>
+          </optgroup>
+          <optgroup label="韓國">
+            <option value="">首爾</option>
+            <option value="">釜山</option>
+            <option value="">濟州島</option>
+          </optgroup>
+        </select>
+      </p>
+      <label>
+        副檔
+        <input type="file" name="" />
+      </label>
+      <br />
+      <input type="submit" value="提交" />
+      <button type="submit">送出按鈕</button>
+      <input type="reset" value="重設" />
+    </form>
+  </body>
+</html>

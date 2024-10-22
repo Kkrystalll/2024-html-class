@@ -1,0 +1,19 @@
+.triangle-border {
+  width: 0px;
+  height: 0px;
+  /* border-top: 100px solid #faa; */
+  /* border-right: 100px solid #afa; */
+  border-bottom: 100px solid #aaf;
+  /* border-left: 100px solid #aff; */
+  /* border-top: 100px solid transparent; */
+  border-right: 100px solid transparent;
+  /* border-bottom: 100px solid #aaf; */
+  /* border-left: 100px solid transparent; */
+}
+
+.clip {
+  width: 200px;
+  height: 200px;
+  background-color: #faa;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}

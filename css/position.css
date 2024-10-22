@@ -1,0 +1,146 @@
+section {
+  margin-bottom: 100px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #ef9696;
+  line-height: 100px;
+  text-align: center;
+  /* position: fixed; */
+  opacity: 0.8;
+  /* top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; */
+}
+
+.fixed-1 {
+  display: none;
+}
+
+.fixed-2 {
+  display: none;
+  position: fixed;
+  background-color: #faf;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+  /* opacity: 0.5; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  font-size: 0;
+}
+
+.link {
+  font-size: 16px;
+  background-color: #faa;
+  display: inline-block;
+  padding: 10px;
+}
+
+body {
+  /* margin-top: 36px; */
+}
+
+.cover {
+  position: fixed;
+  /* width: 400px; */
+  /* height: 400px; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* margin: auto; */
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.cover .card {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrap {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffa;
+  display: flex;
+  flex-wrap: wrap;
+  display: none;
+}
+
+.wrap div {
+  width: 100px;
+  height: 100px;
+  background-color: #aaf;
+  margin: 10px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.box28 {
+  position: relative;
+  background-color: #faa !important;
+  top: 10px;
+  left: 10px;
+}
+
+.sticky-section {
+  height: 500px;
+  position: relative;
+  display: none;
+}
+
+#section1 {
+  background-color: #aff;
+}
+
+#section2 {
+  background-color: #faf;
+}
+
+#section3 {
+  background-color: #aaa;
+}
+
+#section4 {
+  background-color: #aaf;
+}
+
+#section5 {
+  background-color: #afa;
+}
+
+.sticky-item {
+  position: sticky;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(251, 237, 133);
+  top: 0;
+}

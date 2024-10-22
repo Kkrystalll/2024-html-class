@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+}
+
+body {
+  margin: 50px;
+}
+
+.btn,
+.list {
+  background-color: rgb(108, 88, 139);
+  color: white;
+  margin-top: 20px;
+  border: 1px solid rgb(255, 60, 0);
+}
+
+/* .list-item {
+  border-top: 1px solid rgb(25, 0, 255);
+} */
+
+.list .list-item + .list-item {
+  border-top: 1px solid rgb(25, 0, 255);
+}
+
+/* .btn.active {
+  background-color: #fa0;
+} */
+
+.list-item.active {
+  background-color: rgb(192, 121, 165);
+}
+
+#list-item3 {
+  font-size: 30px;
+}
+
+.news-list .news-list-item {
+  font-size: 20px;
+}
+
+.card {
+  font-size: 20px;
+}
+
+.card h1 {
+  font-size: 40px;
+}
+
+.card p {
+  background-color: #fa0;
+}
+
+/* .title ~ p {
+  color: blue;
+} */
+
+/* .title + p {
+  color: red;
+} */
+
+/* div {
+  color: blue;
+} */
+
+.first {
+  width: 200px;
+  height: 200px;
+  background-color: #fa0;
+}
+
+.second {
+  width: 150px;
+  height: 150px;
+  background-color: #f00;
+}
+
+.third {
+  width: 100px;
+  height: 100px;
+  background-color: #0f0;
+}
+
+.first > div {
+  color: rgb(18, 219, 15);
+}
+
+span {
+  color: red;
+}
+
+div > span {
+  color: #0f0;
+}
+
+/* ul {
+  background-color: #faf;
+} */
+
+.list-out {
+  background-color: #faf;
+  line-height: 1.5;
+}
+
+.list-in > li {
+  background-color: #8f12e9;
+}
+
+/* 方法一 */
+.list-in > li > ul {
+  background-color: #faf;
+}
+
+/* #second-li {
+  background-color: #e5e877;
+} */
+
+/* 方法一
+.bg-green {
+  background-color: green !important;
+} */
+
+/* li {
+  background-color: yellowgreen;
+} */
+
+/* 方法二 */
+.list-in > li.bg-green {
+  background-color: green;
+}
+
+/* .bg-green {
+  background-color: green !important;
+} */
+
+/* .list-in > li.bg-green {
+  background-color: green;
+}
+
+.list-in > li {
+  background-color: rgb(98, 0, 128);
+} */
+
+/* .bg-green#second-li {
+  background-color: antiquewhite;
+}
+
+li.bg-green {
+} */
+
+/* 可愛開頭的 alt */
+img[alt^="可愛"] {
+}
+/* 結尾等於 png */
+img[src$=".png"] {
+}
+/* 內容包含「可愛」 */
+img[alt*="可愛"] {
+  border-radius: 80px;
+}
+/* 英文單字包含 */
+img[alt~="fakeimg"] {
+  border-radius: 50px;
+}
+
+.secret {
+  text-decoration: wavy red line-through;
+}
+
+.card-demo {
+  margin-top: 40px;
+  width: 400px;
+  background-color: rgb(210, 151, 151);
+}
+
+.card-demo h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-demo p {
+  text-indent: 2rem;
+  /* text-indent: -10px; */
+  text-align: justify;
+}

@@ -1,0 +1,96 @@
+.float-card {
+  background-color: pink;
+  width: 600px;
+  padding: 20px;
+  margin: 40px;
+}
+
+.content {
+  text-align: justify;
+}
+
+.float-card .cat {
+  width: 28%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  float: right;
+  margin: 20px 0 20px 20px;
+}
+
+.float-card .bear {
+  width: 28%;
+  float: left;
+  margin: 20px 20px 20px 0;
+}
+
+.wrap {
+  width: 300px;
+  background-color: #aaa;
+  margin: 0 auto;
+}
+
+.item {
+  width: 80px;
+  height: 80px;
+  background-color: #fa0;
+  margin: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+.item:nth-child(3n - 2) {
+  width: 180px;
+  height: 180px;
+}
+
+.item:nth-child(6n + 1),
+.item:nth-child(6n + 2),
+.item:nth-child(6n + 3) {
+  float: left;
+}
+
+.item:nth-child(6n + 4),
+.item:nth-child(6n + 5),
+.item:nth-child(6n + 6) {
+  float: right;
+}
+
+.flex-wrap {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  width: 300px;
+  height: 300px;
+  background-color: #fa0;
+  margin: 10px;
+}
+
+.post {
+  /* margin-top: 300px; */
+  padding: 20px;
+  margin: 300px 40px;
+  background-color: #aaf;
+  /* clear: both; */
+}
+
+.post img {
+  width: 100px;
+}
+
+.post .post-cat {
+  float: left;
+}
+
+.post .post-bear {
+  float: right;
+}
+/* 
+.clear {
+  clear: right;
+} */

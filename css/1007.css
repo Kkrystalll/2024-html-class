@@ -1,0 +1,131 @@
+.item {
+  margin-left: 40px;
+  /* border-width: 10px 4px 2px 6px;
+  border-style: solid;
+  border-color: rgb(251, 199, 199); */
+  border: rgb(115, 84, 218) 10px solid;
+  border-radius: 50%;
+
+  width: 600px;
+  height: 600px;
+  /* background-color: #faa; */
+  background-image: url(../images/bear.png);
+  /* linear-gradient(to left, red, yellow); */
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+  /* background-size: 220px 220px; */
+  /* background-image: linear-gradient(to left, red, yellow); */
+  /* background: url(../images/cat.png) no-repeat top / 100px,
+    url(../images/bear.png) no-repeat center / 100px, rgb(178, 178, 245); */
+}
+
+.bear {
+  margin: 100px 0 100px 20px;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  background-color: #ffa;
+}
+
+.card .card-img {
+  width: 220px;
+  height: 220px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  margin: 40px;
+  object-fit: cover;
+}
+
+.cat {
+  width: 30%;
+}
+
+.card-shadow {
+  width: 300px;
+  height: 300px;
+  background-color: #ffa;
+}
+
+form {
+  margin: 40px;
+}
+
+input {
+  border: 4px solid rgb(25, 0, 255);
+  outline: 4px solid #fa0;
+  outline-offset: 5px;
+}
+
+input:focus {
+  border: 4px solid rgb(43, 122, 47);
+  outline: 4px solid rgb(129, 78, 183);
+  outline-offset: 5px;
+}
+
+.content {
+  background-color: #ffa;
+}
+
+.content span {
+  color: red;
+  font-size: 30px;
+  display: block;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: #ffa;
+  display: inline-block;
+  margin: 10px;
+}
+
+section .box:nth-child(2) {
+  background-color: #aff;
+  display: none;
+}
+
+section .box:last-child {
+  background-color: #afa;
+}
+
+section .box:last-child:hover section .box:nth-child(2) {
+  display: inline-block;
+}
+
+/* 
+.box-2 {
+  background-color: #aff;
+}
+
+.box-3 {
+  background-color: #afa;
+} */
+
+.inline-demo p {
+  display: inline;
+}
+
+.flex-item {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.flex-box {
+  background-color: #ffa;
+}
+
+section .flex-box:nth-child(2) {
+  background-color: #aff;
+}
+
+section .flex-box:last-child {
+  background-color: #afa;
+}

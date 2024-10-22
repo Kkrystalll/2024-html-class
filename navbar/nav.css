@@ -1,0 +1,92 @@
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #e5dda2;
+  height: 100px;
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu-link {
+  display: inline-block;
+  height: 100%;
+  line-height: 100px;
+  padding: 0 20px;
+  text-decoration: none;
+  background-color: #aaf;
+}
+
+/* .menu-link:hover {
+  background-color: #faa;
+} */
+
+.menu li:hover .menu-link {
+  background-color: #faa;
+}
+
+.menu li ul {
+  display: none;
+  /* position: absolute;
+  top: 120px;
+  left: 10px;
+  background-color: #afa;
+  width: 100px; */
+}
+
+.menu li:hover ul {
+  display: block;
+  position: absolute;
+  top: 120px;
+  left: 10px;
+  background-color: #afa;
+  width: 100px;
+}
+
+.menu li ul li a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.menu li ul li a:hover {
+  background-color: #aff;
+}
+
+.inside-menu::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  top: -20px;
+  /* background-color: rgb(170, 241, 255); */
+}
+
+.inside-menu li {
+  position: relative;
+}
+
+.inside-menu li #hotel {
+  display: none;
+}
+
+.inside-menu li:hover #hotel {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 20px;
+}

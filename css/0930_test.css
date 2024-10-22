@@ -1,0 +1,80 @@
+.first-box {
+  background-color: #cafecb;
+}
+
+.section-box :first-of-type {
+  background-color: pink;
+}
+
+/* .first-box p:first-of-type {
+  border: 2px solid red;
+}
+
+.first-box a:last-child {
+  color: #fa0;
+} */
+
+.first-box :first-child {
+  font-size: 30px;
+}
+
+.card {
+  width: 50%;
+  min-width: 358px;
+  border: 1px solid gray;
+  /* margin: 20px 60px; */
+}
+
+.card p {
+  margin-top: 20px;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card-content {
+  margin: 20px;
+}
+
+/* .card-text {
+  text-indent: 36px;
+} */
+
+.card-content p:first-of-type {
+  text-indent: 36px;
+}
+
+.tag {
+  color: gray;
+  text-decoration: underline;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: red;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  line-height: 50px;
+  border: 1px solid red;
+}
+
+tbody tr:nth-child(even) {
+  background-color: pink;
+}
+
+tbody tr:nth-child(odd) td:nth-child(odd) {
+  background-color: #cafecb;
+}

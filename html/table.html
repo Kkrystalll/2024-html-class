@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <link
+      rel="icon"
+      href="../images/bear.png"
+      type="image/vnd.microsoft.icon"
+    />
+    <script src="../js/table.js" defer></script>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <tr>
+          <th scope="col">姓名</th>
+          <th>性別</th>
+          <th>年齡</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row" rowspan="2">王小明</td>
+          <td>男</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>男</td>
+          <td>20</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row" colspan="2">平均年齡</th>
+          <td>19</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <table border="1">
+      <caption>
+        這是一個想了解大家資料的表格
+      </caption>
+      <!-- <colgroup>
+        <col style="background-color: red" />
+        <col style="background-color: orange" />
+        <col style="background-color: yellow" />
+        <col span="2" style="background-color: green" />
+        <col style="background-color: blue" />
+      </colgroup> -->
+      <!-- <colgroup>
+        <col style="width: 20%" />
+        <col style="width: 10%" />
+        <col style="width: 20%" />
+        <col style="width: 20%" />
+        <col style="width: 20%" />
+        <col style="width: 10%" />
+      </colgroup> -->
+      <thead>
+        <tr>
+          <th scope="col">姓名</th>
+          <th>性別</th>
+          <th>上份工作</th>
+          <th>生日</th>
+          <th>興趣</th>
+          <th>年齡</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>王小明</td>
+          <td>男</td>
+          <td>行銷</td>
+          <td>2000/09/30</td>
+          <td>吃</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td>李小美</td>
+          <td>女</td>
+          <td>學生</td>
+          <td>2002/11/21</td>
+          <td>睡</td>
+          <td>22</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row" colspan="5">平均年齡</th>
+          <td>19</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

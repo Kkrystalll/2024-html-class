@@ -1,0 +1,79 @@
+section {
+  padding: 100px;
+}
+
+.txt {
+  position: relative;
+}
+
+.txt::before {
+  content: "";
+  height: 10px;
+  width: 2px;
+  background-color: #fa0;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+.txt::after {
+  content: "這是 after";
+  color: blue;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+}
+
+/* h1::before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #f00;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+} */
+
+h1:hover::after {
+  content: "";
+  width: 72px;
+  height: 4px;
+  background-color: rgb(30, 255, 0);
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  transform: translateX(-50%);
+}
+
+/* h1::before {
+  content: "";
+  position: absolute;
+  border-top: 36px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid red;
+  border-left: 18px solid rgb(255, 0, 0);
+  z-index: -1;
+} */
+
+/* h1::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  z-index: -1;
+} */
+
+h1::before {
+  content: "◣";
+  position: absolute;
+  color: #fa0;
+  z-index: -1;
+}

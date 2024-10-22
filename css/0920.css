@@ -1,0 +1,13 @@
+p {
+  background-color: bisque;
+  font-size: 20px;
+}
+span {
+  background-color: red;
+  font-size: 2em;
+}
+
+.list {
+  list-style-type: disc;
+}
+

@@ -1,0 +1,155 @@
+header nav {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  background-color: #ffa;
+  display: none;
+}
+
+nav .avatar {
+  border-radius: 50%;
+}
+
+.menu {
+  font-size: 0;
+}
+
+.link {
+  display: inline-block;
+  background-color: #faf;
+  padding: 0 20px;
+  line-height: 80px;
+  font-size: 16px;
+}
+
+.item {
+  max-width: 600px;
+  background-color: #aaa;
+  margin: 0 auto;
+  height: 600px;
+  display: flex;
+  gap: 20px 10px;
+  flex-wrap: wrap;
+  /* flex-direction: row-reverse; */
+  /* justify-content: start; */
+  align-items: start;
+  /* align-content: center; */
+}
+
+.box {
+  /* width: 100px; */
+  /* height: 100px; */
+  background-color: pink;
+  font-size: 30px;
+  /* order: 2; */
+  /* flex: none; */
+}
+
+.box:first-child {
+  background-color: #aaf;
+  /* order: -1; */
+  /* flex-grow: 2; */
+  flex-shrink: 1;
+}
+
+.box:nth-child(3) {
+  flex-basis: auto;
+  /* order: 1; */
+  /* flex-grow: 1; */
+  /* flex-shrink: 3; */
+}
+
+.box-item {
+  display: flex;
+  background-color: #aaa;
+  width: 600px;
+  margin: 0 auto;
+  display: none;
+}
+
+.card {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid red;
+  /* flex-direction: ; */
+}
+
+.card:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.card-img {
+  flex-basis: 50%;
+}
+
+.card-content {
+  flex-basis: 50%;
+}
+
+.card-content ul {
+  /* list-style-type: disc; */
+  /* list-style-position: inside; */
+  list-style: disc outside;
+  margin-left: 20px;
+  /* font-size: 30px; */
+}
+
+.card-img img {
+  width: 100%;
+}
+
+.cake {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+  align-items: end;
+}
+
+.cake-title {
+  color: #0c4129;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.cake-subtitle {
+  color: #0c4129;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cake-intro {
+  color: #3f3f42;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.cake-content {
+  margin: 20px 0;
+  color: #626264;
+  font-size: 14px;
+}
+
+.cake-hint {
+  color: #aaa;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.cake-btn {
+  display: inline-block;
+  background-color: #13ab67;
+  color: white;
+  padding: 11px 23px;
+  border-radius: 10px;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+.cake-img img {
+  width: 100%;
+}

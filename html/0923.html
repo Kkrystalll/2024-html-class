@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../js/0923.js" defer></script>
+    <link rel="stylesheet" href="../css/0923.css" />
+  </head>
+  <body>
+    <p class="test" id="kk" style="background-color: brown">lorem</p>
+    <button></button>
+    <p>寄信給：<a href="mailto:hihi@gamil.com">hihi@gamil.com</a></p>
+    <div class="svg-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path
+          d="M142.9 96c-21.5 0-42.2 8.5-57.4 23.8L54.6 150.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L40.2 74.5C67.5 47.3 104.4 32 142.9 32C223 32 288 97 288 177.1c0 38.5-15.3 75.4-42.5 102.6L109.3 416H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9L200.2 234.5c15.2-15.2 23.8-35.9 23.8-57.4c0-44.8-36.3-81.1-81.1-81.1z"
+        />
+      </svg>
+    </div>
+    <div class="svg-item">
+      <img src="../images/2.svg" alt="" />
+    </div>
+    <div class="svg-item"></div>
+    <!-- (ul>li*3)*2 -->
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <!-- (ul>li*3)+(ul>li*3) -->
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <!-- (ul>li*3)+(p>span*2) -->
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <p><span></span><span></span></p>
+
+    <!-- (div>h1+p+span*3)*3^section>h2{常見問題} -->
+    <!-- (div>h1+p+span*3)*3+section>h2{常見問題} -->
+    <!-- (div*3>h1+p+span*3)^section>h2{常見問題} -->
+    <!-- (div*3>h1+p+span*3)+section>h2{常見問題} -->
+    <div>
+      <h1></h1>
+      <p></p>
+      <span></span><span></span><span></span>
+    </div>
+    <div>
+      <h1></h1>
+      <p></p>
+      <span></span><span></span><span></span>
+    </div>
+    <div>
+      <h1></h1>
+      <p></p>
+      <span></span><span></span><span></span>
+    </div>
+    <section>
+      <h2>常見問題</h2>
+    </section>
+
+    <form action="#" method="post">
+      <p>
+        <label for="text-input">姓名：for->id</label>
+        <input
+          type="text"
+          placeholder="請輸入你的名字"
+          value=""
+          id="text-input"
+          required
+        />
+      </p>
+      <p>
+        <label>
+          姓名：包在裡面
+          <input type="text" placeholder="請輸入你的名字" value="" required />
+        </label>
+      </p>
+      <p>
+        input:number
+        <input type="number" name="" id="" />
+      </p>
+      <p>
+        input:email
+        <input type="email" name="" id="" />
+      </p>
+      <p>
+        input:password
+        <input type="password" name="" id="" />
+      </p>
+      <p>
+        input:tel
+        <input type="tel" name="" id="" />
+      </p>
+      <p>
+        input:url
+        <input type="url" name="" id="" />
+      </p>
+      <p>時間格式</p>
+      <p>
+        input:date
+        <input
+          type="date"
+          name=""
+          id=""
+          min="2024-09-23"
+          placeholder="dfvlfdjb"
+        />
+      </p>
+      <p>
+        input:datetime-local
+        <input type="datetime-local" name="" id="" />
+      </p>
+      <p>
+        input:month
+        <input type="month" name="" id="" />
+      </p>
+      <p>
+        input:time
+        <input type="time" name="" id="" />
+      </p>
+      <p>
+        input:week
+        <input type="week" name="" id="" />
+      </p>
+      <p>單選複選</p>
+      <p>
+        input:radio
+        <label for="first-radio" style="color: green">111111111</label>
+        <input type="radio" name="radio-input" id="first-radio" />
+
+        <label> <input type="radio" name="radio-input" id="" />22222222 </label>
+        <label>
+          <input type="radio" name="radio-input" id="" checked />3333333
+        </label>
+        <label> <input type="radio" name="radio-input" id="" />4444444 </label>
+        <label> <input type="radio" name="radio-input" id="" />5555555 </label>
+        <label> <input type="radio" name="radio-input" id="" />6666666 </label>
+      </p>
+      <label for="first-radio" style="color: red">111111111</label>
+      <input type="radio" name="radio-input" id="first-radio" />
+
+      <p>
+        input:checkbox
+        <label>
+          <input
+            type="checkbox"
+            name="checkbox-input"
+            id="checkbox-first"
+          />111111</label
+        >
+        <input type="checkbox" name="checkbox-input" id="" checked />2
+        <input type="checkbox" name="checkbox-input" id="" />3
+        <input type="checkbox" name="checkbox-input" id="" />4
+        <input type="checkbox" name="checkbox-input" id="" checked />5
+        <input type="checkbox" name="checkbox-input" id="" />6
+      </p>
+      <label for="checkbox-first">1</label>
+      <input type="checkbox" name="checkbox-input" id="checkbox-first" />
+      <p>
+        <label for=""
+          >下拉選單
+          <select name="" id="">
+            <option value="">衣著</option>
+            <option value="">居家用品</option>
+            <option value="" selected>飲食</option>
+            <option value="">4</option>
+            <option value="">5</option>
+          </select>
+        </label>
+      </p>
+      <label for=""
+        >下拉選單-------------
+        <select name="" id="">
+          <optgroup label="群組一">
+            <option value="">1</option>
+            <option value="">2</option>
+          </optgroup>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+          ul>
+        </select>
+      </label>
+      <p>
+        input:range
+        <input type="range" name="" id="" />
+      </p>
+      <p>
+        input:hidden<input
+          type="hidden"
+          name="user-id"
+          value="kugfuees-fbewiklw-kbk"
+        />
+      </p>
+      <textarea name="" id=""></textarea>
+      <p>input:color<input type="color" name="" id="" /></p>
+      <p>input:file<input type="file" name="" id="" /></p>
+      <!-- <input type="search" name="keyword" /> -->
+      <p>input:<input type="submit" value="送出" /></p>
+      <p>input:image<input type="image" src="../images/bear.png" alt="" /></p>
+      <!-- <p>button:<button type="submit">搜尋</button></p> -->
+      <p>
+        button 的 button:<button type="button">
+          <img src="../images/2.svg" alt="" />點我送出
+        </button>
+      </p>
+      <p>input:button<input type="button" value="搜尋" /></p>
+      <p>button 的重置:<button type="reset">重置</button></p>
+      <p>input:reset<input type="reset" value="重置" /></p>
+    </form>
+
+    <form action="#" method="get">
+      <h2>搜尋</h2>
+      <input type="search" name="keyword" />
+      <p>button:<button type="submit">搜尋</button></p>
+    </form>
+    <input type="checkbox" name="checkbox-input" id="checkbox-123" />
+    <p>
+      input:checkbox
+      <label>
+        <input
+          type="checkbox"
+          name="checkbox-input"
+          id="checkbox-123"
+        />放在裡面的label</label
+      >
+    </p>
+    <label for="checkbox-123">放在外面的label</label>
+
+    <details>
+      <summary>Q1. 請問今天幾號</summary>
+      <ul>
+        <li>9/12</li>
+        <li>Current invoice: $75.30</li>
+        <li>Due date: 5/6/19</li>
+      </ul>
+    </details>
+    <a href="#">ggggggg</a>
+  </body>
+</html>

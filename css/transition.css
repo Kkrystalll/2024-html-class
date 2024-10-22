@@ -1,0 +1,261 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #ffa;
+  /* transition-property: background-color, height;
+  transition-duration: 2s, 2s;
+  transition-delay: 0s, 1s; */
+  /* transition-timing-function: easy-in; */
+  /* transition: background-color 2s 0s, height 2s 1s; */
+  transition: all 2s 1s;
+  position: relative;
+}
+
+.box::before {
+  content: "";
+  width: 40px;
+  height: 20px;
+  background-color: #fa0;
+  display: block;
+  position: absolute;
+  left: 0;
+  transition: all 2s;
+  opacity: 0;
+}
+
+.box:hover::before {
+  opacity: 1;
+  left: 200px;
+}
+
+.box:hover {
+  background-color: #aaf;
+  height: 400px;
+}
+
+.bg-img {
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/bear.png);
+  background-size: 100%;
+  background-position: center;
+  transition: all 1s;
+  position: relative;
+}
+
+.bg-img:hover {
+  background-size: 150%;
+  height: 300px;
+}
+
+.bg-img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.bg-img::after {
+  content: "after!!!";
+  /* display: none; */
+  opacity: 0;
+  transition: all 3s;
+}
+
+.bg-img:hover::after {
+  /* display: block; */
+  opacity: 1;
+}
+
+.bg-img:hover::before {
+  opacity: 1;
+}
+
+section {
+  background-color: #6c929f;
+  width: 200px;
+  padding: 100px;
+  position: relative;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.img-item {
+  flex: none;
+  width: 200px;
+  height: 200px;
+  background-size: 100%;
+  background-position: center;
+}
+
+.img-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.radio-group {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+}
+
+.btn-group {
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-btn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.carousel .img-item {
+  opacity: 0;
+}
+
+.cat:checked ~ .carousel {
+  transform: translateX(0);
+}
+
+.cat:checked ~ .carousel .cat {
+  opacity: 1;
+}
+
+.fat-tiger:checked ~ .carousel {
+  transform: translateX(-200px);
+}
+
+.fat-tiger:checked ~ .carousel .fat-tiger {
+  opacity: 1;
+}
+
+.bear:checked ~ .carousel {
+  transform: translateX(-400px);
+}
+.bear:checked ~ .carousel .bear {
+  opacity: 1;
+}
+
+.gon:checked ~ .carousel {
+  transform: translateX(-600px);
+}
+.gon:checked ~ .carousel .gon {
+  opacity: 1;
+}
+
+.purin:checked ~ .carousel {
+  transform: translateX(-800px);
+}
+.purin:checked ~ .carousel .purin {
+  opacity: 1;
+}
+
+/* .cat:checked ~ .carousel .cat {
+  transition: all 1s;
+  transform: translateX(0);
+}
+
+.fat-tiger:checked ~ .carousel .fat-tiger {
+  transition: all 1s;
+  transform: translateX(-200px);
+}
+
+.bear:checked ~ .carousel .bear {
+  transition: all 1s;
+  transform: translateX(-400px);
+}
+
+.gon:checked ~ .carousel .gon {
+  transform: translateX(-600px);
+}
+
+.purin:checked ~ .carousel .purin {
+  transform: translateX(-800px);
+} */
+
+.container {
+  padding: 100px;
+  background: #6c929f;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.img-area {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  align-self: center;
+}
+
+.img-list {
+  width: max-content;
+  height: 200px;
+  transition: all 1s;
+}
+
+.img-area img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: inline;
+  float: left;
+}
+
+input[type="radio"] {
+  display: none;
+}
+.btn-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.btn-list label {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+#cat1:checked ~ .img-area > .img-list {
+  transform: translateX(0px);
+}
+#cat1:checked ~ .btn-list > label[for="cat1"] {
+  background: gray;
+}
+#cat2:checked ~ .img-area > .img-list {
+  transform: translateX(-200px);
+}
+#cat2:checked ~ .btn-list > label[for="cat2"] {
+  background: gray;
+}
+#cat3:checked ~ .img-area > .img-list {
+  transform: translateX(-400px);
+}
+#cat3:checked ~ .btn-list > label[for="cat3"] {
+  background: gray;
+}
+#cat4:checked ~ .img-area > .img-list {
+  transform: translateX(-600px);
+}
+#cat4:checked ~ .btn-list > label[for="cat4"] {
+  background: gray;
+}
