@@ -1,0 +1,158 @@
+nav {
+  padding: 0 10px;
+  background-color: #6fa698;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  line-height: 60px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+.toggle-btn {
+  cursor: pointer;
+}
+
+.menu-area {
+  /* display: none; */
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 100%;
+  background-color: #458a79;
+  color: white;
+  padding: 0 10px;
+}
+
+.menu {
+  border-bottom: 1px solid #003729;
+  position: relative;
+}
+
+.toggle-menu-btn {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  cursor: pointer;
+}
+
+.submenu {
+  background-color: #256f5c;
+  border-top: 1px solid #003729;
+  color: white;
+  padding: 0 10px;
+}
+
+.container {
+  width: 100%;
+  margin: 100px auto 0;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+}
+
+.col {
+  /* padding: 0 10px; */
+  box-sizing: border-box;
+}
+
+.col:first-child {
+  padding-right: 10px;
+  width: 25%;
+}
+
+.col:last-child {
+  padding-left: 10px;
+  width: 75%;
+}
+
+.item {
+  /* width: 49%; */
+  width: calc(20% - 20px);
+  height: 200px;
+  background-color: #faa;
+  border-radius: 10px;
+  /* margin: 20px; */
+  margin: 0 10px;
+}
+
+.item:first-child {
+  /* width: 32.5%; */
+  /* margin-right: 10px; */
+}
+
+.item:last-child {
+  /* width: 65.5%; */
+  /* margin-left: 10px; */
+}
+
+@media screen and (width < 768px) {
+  .menu-area {
+    /* display: none; */
+    left: 100%;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+  }
+
+  .toggle-menu:checked ~ .menu-area {
+    /* display: block; */
+    left: 0;
+    opacity: 1;
+  }
+
+  .submenu-area {
+    /* display: none; */
+    height: 0;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+  }
+
+  .toggle-submenu:checked ~ .submenu-area {
+    /* display: block; */
+    height: 182px;
+  }
+
+  .toggle-submenu:checked ~ .toggle-menu-btn i {
+    /* transform: rotate(180deg); */
+    rotate: 180deg;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-area {
+    position: relative;
+    display: flex;
+    background-color: #6fa698;
+    color: black;
+  }
+
+  .toggle-btn,
+  .toggle-menu-btn {
+    display: none;
+  }
+
+  .submenu-area {
+    display: none;
+    position: absolute;
+  }
+
+  .menu {
+    padding: 0 20px;
+    border-bottom: none;
+    cursor: pointer;
+  }
+
+  .menu:hover .submenu-area {
+    display: block;
+  }
+}
