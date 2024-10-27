@@ -170,3 +170,23 @@ section {
 .box9 {
   grid-area: box9;
 }
+
+[class*="col-"] {
+  /* padding: 20px; */
+}
+
+.coupon {
+  max-width: 1214px;
+  margin: 0 auto;
+  background-color: #aaa;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* gap: 40px; */
+}
+
+.card {
+  height: 465px;
+  background-color: #ffa;
+  margin: 0 20px;
+}
