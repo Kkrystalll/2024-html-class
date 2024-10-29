@@ -1,0 +1,27 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #fa0;
+  animation: 6s slide;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 10%;
+  }
+  40% {
+    margin-left: 20%;
+  }
+  60% {
+    margin-left: 60%;
+  }
+  80% {
+    margin-left: 70%;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}

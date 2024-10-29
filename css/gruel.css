@@ -1,0 +1,64 @@
+img {
+  vertical-align: bottom;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.item-group {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.about {
+  background-color: #aaa;
+}
+
+.title {
+  margin: 0 10px 20px;
+}
+
+.title h2 {
+  text-align: center;
+  font-size: 46px;
+}
+
+.title p {
+  font-size: 24px;
+  text-align: center;
+}
+
+.item {
+  margin: 0 10px 20px;
+}
+
+.item .pic img {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+}
+
+@media screen and (width >= 768px) {
+  .item-group {
+    display: flex;
+  }
+
+  .service .item {
+    display: flex;
+  }
+
+  .service .item .pic,
+  .service .item .text {
+    width: 50%;
+    margin: 0;
+  }
+
+  .service .item .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
