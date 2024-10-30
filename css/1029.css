@@ -10,15 +10,52 @@ nav {
   line-height: 60px;
 }
 
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+
+.menu {
+  transform: translateX(-10%);
+  transition-property: transform;
+  transition-duration: 0.5;
+}
+
+/* .menu:first-of-type {
+  transition: 0.5s;
+} */
+
+.menu:nth-of-type(2) {
+  /* transition: 0.5s 0.5s; */
+  transition-delay: 0.5s;
+}
+
+.menu:last-of-type {
+  /* transition: 0.5s 1s; */
+  transition-delay: 1s;
+}
+
+.toggle-menu:checked ~ .menu-area {
+  /* display: block; */
+  left: 0;
+  opacity: 1;
+}
+
+.toggle-menu:checked ~ .menu-area .menu {
+  transform: translateX(0);
+}
+
 .menu-area {
   /* display: none; */
   position: absolute;
   right: 0;
-  left: 0;
+  left: 100%;
   top: 100%;
   background-color: #458a79;
   color: white;
   padding: 0 10px;
+  transition: 1s;
+  opacity: 0;
 }
 
 .menu {
@@ -36,6 +73,22 @@ nav {
 .toggle-menu-btn {
   position: absolute;
   right: 10px;
+}
+
+.submenu-area {
+  /* display: none; */
+  height: 0;
+  overflow: hidden;
+  transition: 2s;
+}
+
+.toggle-submenu:checked ~ .submenu-area {
+  /* display: block; */
+  height: 244px;
+}
+
+.toggle-submenu:checked ~ .toggle-menu-btn i {
+  transform: rotate(180deg);
 }
 
 @media screen and (width >= 768px) {

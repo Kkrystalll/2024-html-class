@@ -115,6 +115,12 @@ input[type="radio"] {
     transition: all 0.3s ease-in-out;
   }
 
+  .toggle-menu:checked ~ .menu-area {
+    /* display: block; */
+    left: 0;
+    opacity: 1;
+  }
+
   .menu {
     opacity: 0;
     translate: -100%;
@@ -131,12 +137,6 @@ input[type="radio"] {
 
   .menu:nth-child(3) {
     transition: all 0.3s 0.6s;
-  }
-
-  .toggle-menu:checked ~ .menu-area {
-    /* display: block; */
-    left: 0;
-    opacity: 1;
   }
 
   .submenu-area {

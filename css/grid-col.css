@@ -1,7 +1,6 @@
 /* 屬性選擇器 class 包含的屬性 */
 [class*="col-"] {
   box-sizing: border-box;
-  /* padding: 0 10px; */
 }
 
 .col-1 {
