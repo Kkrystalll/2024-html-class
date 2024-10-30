@@ -2,11 +2,17 @@
   background-color: #aaa;
   max-width: 1000px;
   margin: 100px auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* padding: 10px; */
   /* background-image: url(/images/tiger-banner.jpeg); */
   /* gap: 20px; */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
 }
 
 .card {
@@ -32,10 +38,10 @@
   margin: 10px;
 }
 
-.card:nth-of-type(2) {
+.card-wrap:nth-of-type(2) .card {
   background-color: #ffa;
 }
 
-.card:last-of-type {
+.card-wrap:last-of-type .card {
   background-color: #faf;
 }
