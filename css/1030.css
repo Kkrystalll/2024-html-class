@@ -4,7 +4,7 @@
   margin: 100px auto;
   /* display: flex;
   flex-wrap: wrap; */
-  /* padding: 10px; */
+  /* padding: 0 10px; */
   /* background-image: url(/images/tiger-banner.jpeg); */
   /* gap: 20px; */
 }
@@ -44,4 +44,29 @@
 
 .card-wrap:last-of-type .card {
   background-color: #faf;
+}
+
+.box {
+  min-height: 200px;
+  /* border: 1px solid red; */
+}
+
+.box img {
+  width: 100%;
+}
+
+.col:nth-child(odd) .box {
+  background-color: #ffa;
+}
+
+.col:nth-child(even) .box {
+  background-color: #affa;
+}
+
+.box.small-bax {
+  background-color: red;
+}
+
+.sale {
+  display: flex;
 }

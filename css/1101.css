@@ -1,0 +1,36 @@
+.container-fluid {
+  width: 90%;
+}
+
+.card-img {
+  aspect-ratio: 4/3;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #fa0;
+  /* animation-name: aaa; */
+  /* animation-duration: 3s; */
+  /* animation-timing-function: steps(5, end); */
+  /* animation-delay: 0.5s; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
+
+  /* animation: aaa 3s steps(5, end) infinite alternate; */
+}
+
+@keyframes aaa {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 300px;
+  }
+  50% {
+    margin-left: 100px;
+  }
+  100% {
+    margin-left: 800px;
+  }
+}

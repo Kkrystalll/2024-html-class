@@ -3,6 +3,12 @@
   box-sizing: border-box;
 }
 
+[class*="cols-"] > .col {
+  box-sizing: border-box;
+  padding: 0 10px 10px;
+}
+
+/* row 子層 */
 .col-1 {
   width: 8.33%;
 }
@@ -51,6 +57,32 @@
   width: 100%;
 }
 
+/* row 同層 */
+
+.cols-1 > .col {
+  width: 100%;
+}
+
+.cols-2 > .col {
+  width: 50%;
+}
+
+.cols-3 > .col {
+  width: 33.33%;
+}
+
+.cols-4 > .col {
+  width: 25%;
+}
+
+.cols-5 > .col {
+  width: 20%;
+}
+
+.cols-6 > .col {
+  width: 16.66%;
+}
+
 @media screen and (min-width: 768px) {
   .col-md-1 {
     width: 8.33%;
@@ -87,6 +119,30 @@
   }
   .col-md-12 {
     width: 100%;
+  }
+
+  .cols-md-1 > .col {
+    width: 100%;
+  }
+
+  .cols-md-2 > .col {
+    width: 50%;
+  }
+
+  .cols-md-3 > .col {
+    width: 33.33%;
+  }
+
+  .cols-md-4 > .col {
+    width: 25%;
+  }
+
+  .cols-md-5 > .col {
+    width: 20%;
+  }
+
+  .cols-md-6 > .col {
+    width: 16.66%;
   }
 }
 
@@ -126,5 +182,29 @@
   }
   .col-lg-12 {
     width: 100%;
+  }
+
+  .cols-lg-1 > .col {
+    width: 100%;
+  }
+
+  .cols-lg-2 > .col {
+    width: 50%;
+  }
+
+  .cols-lg-3 > .col {
+    width: 33.33%;
+  }
+
+  .cols-lg-4 > .col {
+    width: 25%;
+  }
+
+  .cols-lg-5 > .col {
+    width: 20%;
+  }
+
+  .cols-lg-6 > .col {
+    width: 16.66%;
   }
 }

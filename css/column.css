@@ -7,6 +7,11 @@
   flex-wrap: wrap; */
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
 
 .box {
   height: 100px;
