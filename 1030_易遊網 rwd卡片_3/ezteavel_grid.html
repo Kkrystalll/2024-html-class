@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eztravel coupon</title>
+  </head>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="column.css" />
+  <style>
+    .container {
+      background-color: #bebcbc;
+      max-width: 1400px;
+      margin: 100px auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .cardwrap {
+      padding: 20px;
+    }
+    .card {
+      background-color: #fff;
+      border-style: solid;
+      border-color: #1a2d85;
+      border-width: 2px 2px 4px 2px;
+      border-radius: 4px 4px 0 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    h2 {
+      color: #ff4e3a;
+      font-weight: bolder;
+      font-size: 30px;
+      margin: 40px 0 10px 0;
+      line-height: 1.4;
+    }
+    p {
+      font-size: 22px;
+      color: #1a2d85;
+      line-height: 1.4;
+      font-weight: 700;
+    }
+    .cardline {
+      background-color: #fbd606;
+      width: 50%;
+      height: 12px;
+    }
+    .downloadBtn {
+      font-size: 20px;
+      font-weight: 700;
+      color: #000;
+      background-color: #ffc107;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 0.25rem;
+      margin: 10px 0 20px 0;
+      box-shadow: 3px 3px #000;
+    }
+    .card-img img {
+      width: auto;
+      height: 140px;
+      margin: 10px 0;
+    }
+    .card::before {
+      content: "";
+      border-left: 2px dotted #1a2d85;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      bottom: 10px;
+    }
+    .card::after {
+      content: "";
+      border-left: 2px dotted #1a2d85;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      bottom: 10px;
+    }
+    .circle {
+      height: 15px;
+      width: 15px;
+      background: #1a2d85;
+      position: absolute;
+      bottom: -4px;
+    }
+
+    .circle:first-of-type {
+      left: -16px;
+      border-radius: 50px 0 0 50px;
+    }
+    /* 可以參考簡報 first-of-type 的說明，因為 first-of-type 是指該 「類型」 的第一個元素，現在 circle 的類型是 div ，但是 .circle:first-of-type 並不是這個同層的第一個 div 所以會吃不到樣式，解決方法是：
+    1. 把 <div class="circle c1"></div> 放到這層的第一個 div
+    2. 把 <div class="circle c1"></div> <div class="circle c2"></div>，改成一個這個層級沒有的標籤，例如：<article class="circle c1"></article> <article class="circle c2"></article> 
+    3. 你現在處理的方式，給她新的 class name
+    以上選項我會選擇的方式是 3(最簡單快速的方式) > 1(可能不想將 circle 分開寫) > 2(語意不對不推薦) */
+
+    .circle:last-of-type {
+      right: -16px;
+      border-radius: 0 50px 50px 0;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="cardwrap col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="cardline"></div>
+          <h2>
+            全站下單抽<br />
+            $10,000旅遊金
+          </h2>
+          <p>消費不限金額</p>
+          <p>抽6名</p>
+          <div class="card-img">
+            <img
+              src="https://event.cdn-eztravel.com.tw/events/travelfair/2024itf/gift_01.png"
+              alt=""
+            />
+          </div>
+          <a href="" class="downloadBtn">立即下載</a>
+          <div class="circle c1"></div>
+          <div class="circle c2"></div>
+        </div>
+      </div>
+      <div class="cardwrap col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="circle c1"></div>
+          <div class="cardline"></div>
+          <h2>
+            APP天天簽到抽<br />
+            SONY降噪耳機
+          </h2>
+          <p>推薦好友再領</p>
+          <p>LINE POINTS20點</p>
+          <div class="card-img">
+            <img
+              src="https://event.cdn-eztravel.com.tw/events/travelfair/2024itf/gift_02.png"
+              alt=""
+            />
+          </div>
+          <a href="" class="downloadBtn">立即下載</a>
+
+          <div class="circle c2"></div>
+        </div>
+      </div>
+      <div class="cardwrap col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="cardline"></div>
+          <h2>
+            官方<br />
+            LINE好友
+          </h2>
+          <p>天天免費抽</p>
+          <p>AirPods4</p>
+          <div class="card-img">
+            <img
+              src="https://event.cdn-eztravel.com.tw/events/travelfair/2024itf/gift_03.png"
+              alt=""
+            />
+          </div>
+          <a href="" class="downloadBtn">立即下載</a>
+          <div class="circle c1"></div>
+          <div class="circle c2"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
